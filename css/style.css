@@ -1,0 +1,93 @@
+/*body {*/
+    /*position: relative;*/
+    /*font-family: 黑体;*/
+    /*margin: 250px auto 250px auto;*/
+    /*width: 960px;*/
+    /*text-align: center;*/
+    /*position: relative;*/
+/*}*/
+
+.ti {
+    text-align: center;
+    padding-top: 250px;
+}
+
+.p {
+    font-family: 等线;
+    font-size: 30px;
+    text-transform: none;
+    color: #000;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.p:hover {
+    color: #e91e63;
+    transition: 0.3s;
+}
+
+.splash {   /*跳转页面文字*/
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 等线;
+    color: #e91e63;
+}
+
+.en {  /*按钮*/
+    text-align: center;
+    font-family: 等线;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.bo {
+    padding-top: 215px;
+    text-align: center;
+}
+
+.bo-text {
+    font-size: 15px;
+    font-family: 黑体;
+    text-transform: none;
+    color: #e91e63;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bo-text:hover {
+    color: #e91e63;
+    transition: 0.3s;
+}
+
+.do {
+    padding-top: 95px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 等线;
+    text-transform: none;
+    color: #e91e63;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.do:hover {
+    color: #1976d2;
+    transition: 0.3s;
+}
+
+.two-top { /* 第二页开始*/
+    text-align: center;
+    padding-top: 255px;
+    padding-bottom: 386px;
+}
+
+input[type=radio]:checked + .page {
+    transform: translateY(0);
+    animation: fromBtm .4s;
+}
+
+@keyframes fromBtm {
+    from { transform: translateY(100%); }
+    to {  }
+}

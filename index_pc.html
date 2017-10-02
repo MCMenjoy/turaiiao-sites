@@ -1,0 +1,124 @@
+<html lang="zh-CN"><head>
+        <!--不达成功誓不休。-->
+        <!--你好，陌生人，这一秒你只属于我。-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Turaiiao 个人主页 - 桌面版</title>
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Raleway';
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+            }
+
+            .title a img {
+                max-height: none!important;
+                width: 120px;
+                height: 120px;
+                overflow: hidden;
+                border-radius: 50%;
+                background: #FFF;
+                box-shadow: rgba(255,255,255,1) 0 0 0 5px,rgba(0,0,0,1) 0 0 5px 4px;
+                -webkit-transition: -webkit-transform 600ms;
+                -moz-transition: -moz-transform 600ms;
+                transition: transform 600ms;
+            }
+            .title a img:hover {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            .ti {
+                padding-bottom: 45px;
+            }
+            .p {
+                font-family: 等线;
+                font-size: 30px;
+                text-transform: none;
+                color: #000;
+                transition: 0.3s;
+                cursor: default;
+            }
+
+            .p:hover {
+                color: #e91e63;
+                transition: 0.3s;
+            }
+            .do {
+                padding-top: 65px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="content">
+                <div class="ti">
+                    <p class="p">不停的前进，我知道希望在哪里。</p>
+                </div>
+
+                <div>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            onclick="onContentClick()">
+                        我的主页
+                    </button>
+
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            style="margin-left: 20px" onclick="onZuoPingClick()">
+                        主要作品
+                    </button>
+                </div>
+
+                <div class="do">
+                    <a href="app/download.html" target="_blank">下载一品微校</a>
+                </div>
+            </div>
+        </div>
+    
+</body>
+    <script type="text/javascript">
+        function onContentClick() {
+            window.open("content.html", "_blank")
+        }
+        function onZuoPingClick() {
+            window.open("http://meniao-notes.sxl.cn/", "_black");
+        }
+    </script>
+</html>

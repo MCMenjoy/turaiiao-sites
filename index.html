@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!--不达成功誓不休。-->
+        <!--你好，陌生人，这一秒你只属于我。-->
+<head>
+    <meta charset="UTF-8">
+    <title>跳转页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+    <body>
+        <p class="splash">要有梦想，即使遥远。</p>
+    </body>
+        <script type="text/javascript">
+            var isMobile = {
+                Android: function () {
+                    return navigator.userAgent.match(/Android/i) ? true : false;
+                },
+                BlackBerry: function () {
+                    return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+                },
+                iOS: function () {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+                },
+                Windows: function () {
+                    return navigator.userAgent.match(/IEMobile/i) ? true : false;
+                },
+                any: function () {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+                }
+            };
+
+            if (isMobile.any()) {
+                window.location.href = "index_mobile.html";
+            } else {
+                // window.location.href = "index_pc.html";
+            }
+        </script>
+        <SPAN style="font-size: 12px; text-align: center; padding-top: 100px;"><script type="text/javascript">
+            function go(t,url){
+                document.write("<div id=text>本页将在<strong id='tt'></strong>后，跳转至：<span id='link'></span></div>");
+                document.getElementById("link").innerHTML="<a href="+url+">"+url+"</a>";
+                $(t,url);
+            }
+
+            function $(t,url){
+                ta = t-1;
+                tb = t + "000";
+                d = document.getElementById("tt");
+                d.innerHTML=t;
+                window.setInterval(function() {
+                    go_to(url);
+                },1000);
+            }
+
+            function go_to(url){
+                d.innerHTML=ta--;
+
+                if(ta < 0) {
+                    document.write("正在跳转至：<a href="+url+">"+url+"</a>");
+                    location.href=url;
+                } else {
+                    return;
+            }
+}
+</script>
+            <script type="text/javascript">
+                if (isMobile.any())
+                    go(5, "index_mobile.html");
+                else
+                    go(5, "index_pc.html")
+            </script> </SPAN>
+
+</html>
